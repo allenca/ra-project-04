@@ -730,7 +730,7 @@ object {
       justify-content: space-between;
   position: absolute;
   width: 100%;
-  top: 32px; }
+  margin-top: 0; }
 
 .banner {
   display: -ms-flexbox;
@@ -747,22 +747,24 @@ object {
     background: url("../../images/logos/inhabitent-logo-full.svg");
     background-size: cover;
     background-position: center;
-    height: 500px;
-    width: 500px; }
+    height: 20rem;
+    width: 20rem; }
 
 .tentIcon {
-  height: 100px;
-  width: 100px;
-  margin-left: 100px; }
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 1.5rem 0 0 4rem; }
 
 .menu-menu-container {
   text-align: right;
-  margin-right: 30px; }
+  margin-right: 4rem; }
   .menu-menu-container ul li a {
     color: white;
-    margin: 30px 30px 0px 0px;
+    margin: 1rem 1rem 0px 0px;
     text-transform: uppercase; }
 
+/* tablet responsive */
+/* desktop responsive */
 .footerBackground {
   background: url("../../images/dark-wood.png");
   background-size: cover;
@@ -800,7 +802,7 @@ object {
 .copyright {
   color: white;
   text-align: center;
-  margin-top: 5rem; }
+  margin: 5rem 0 0 0 auto; }
 
 .shopActions {
   display: -ms-flexbox;
@@ -810,21 +812,38 @@ object {
   -ms-flex-pack: justify;
       justify-content: space-between; }
 
-.shopImage {
-  width: 75px;
-  height: 75px; }
-
-.shopButton {
-  width: 100px;
-  height: 100px;
-  background-color: turqoise; }
-
 .homeSectionTitle {
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  margin: 5rem 0 5rem 0; }
 
 .widthProducts {
   width: 80%;
   margin: 0 auto; }
   .widthProducts .productType {
-    text-align: center; }
+    text-align: center;
+    border-top: 4px solid Gainsboro;
+    border-right: 1px solid Gainsboro;
+    border-bottom: 1px solid Gainsboro;
+    border-left: 1px solid Gainsboro;
+    height: 30vh; }
+    .widthProducts .productType p {
+      width: 13rem; }
+    .widthProducts .productType .shopImage {
+      width: 4rem;
+      height: 4rem;
+      margin: 1rem; }
+    .widthProducts .productType .shopButton {
+      color: red;
+      padding: 15px 20px;
+      width: 6.5rem;
+      height: 3rem;
+      background-color: #008080;
+      color: white;
+      text-decoration: none;
+      height: 5rem;
+      width: 10rem;
+      text-align: center; }
+
+p {
+  color: grey; }

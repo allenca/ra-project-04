@@ -1,66 +1,9 @@
-<?php    
-$query = new WP_Query(array(
-    'posts_per_page' => 3,
-    'post_type' => 'post',
-    ));
-?> 
-
-<?php while ( $query->have_posts() ){ $query->the_post(); ?>
-	<h3 class='test'> woeijreowijroiwejoi <?php the_title(); ?> </h3> 
-
-    <?php if ( 'post' === get_post_type()) {
-
-    };
-
-    if ( has_post_thumbnail()){
-        the_post_thumbnail();
-    }
-}
-    ?>
-
-
-<?php endwhile; ?>
-
-
-
-
-$query = new WP_Query(array(
-        'posts_per_page' => 4,
-        'post_type' => 'adventure',
-    ));
-    if (!empty($query)) {
-
-    }
-    while ( $query->have_posts() ) : $query->the_post(); 
-        the_title();  
-        the_content();
-        the_permalink();
-    endwhile; // End of the loop. ?>
-
-
-
-    foreach($terms as $term) { ?>   
-    <!-- four children here -->     
-    <div class="productType">
-        <img class="shopImage" src="<?php echo get_bloginfo("stylesheet_directory")?>/images/product-type-icons/<?php echo $term->name; ?>.svg">
-        <p><?php echo $term->description; ?></p>
-        <a class="btn" href="#"><?php echo $term->name; ?> stuff</a>  
-        <?php print_r ($term) ?>   
-    </div> <?php
-    }; ?>                    
-</div>
-
-
-
-
 <?php if(){
 
     } else {
             
     }
 ?>
-
-
 
 
 <?php $archive_query = new WP_Query(array(
