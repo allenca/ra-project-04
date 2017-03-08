@@ -18,8 +18,5 @@ if ( ! defined( 'WPINC' ) ) {
 define( 'RF_DIR', dirname( __FILE__ ) );
 
 
-
 include (RF_DIR . '/lib/post_tax.php');
-
-
 ?>

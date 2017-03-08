@@ -107,6 +107,4 @@ function add_top_search_menu( $items, $args ) {
     return $items;
 }
 
-
-
 ?>

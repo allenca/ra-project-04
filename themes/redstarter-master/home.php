@@ -42,7 +42,9 @@ $query = new WP_Query(array(
     ));
 ?> 
 
-<?php while ( $query->have_posts() ){ $query->the_post(); ?>
+<?php while ( $query->have_posts() ){ 
+    $query->the_post(); 
+?>
     <h3 class='test'> woeijreowijroiwejoi <?php the_title(); ?> </h3> 
 
     <?php if ( 'post' === get_post_type()) {
