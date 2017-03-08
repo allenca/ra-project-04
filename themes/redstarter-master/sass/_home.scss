@@ -1,0 +1,31 @@
+.shopActions{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.shopImage{
+	width: 75px;
+	height: 75px;
+}
+
+.shopButton{
+	width: 100px;
+	height: 100px;
+	background-color: turqoise;
+}
+
+.homeSectionTitle{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.widthProducts{
+	width:80%;
+	margin: 0 auto;
+	
+	.productType{
+	text-align:center;
+	}
+}
+
