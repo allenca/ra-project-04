@@ -1,3 +1,5 @@
+<h1>this is PAGE.php</h1>
+
 <?php
 /**
  * The template for displaying all pages.

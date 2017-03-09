@@ -1,4 +1,4 @@
-<h1> I be single.php </h1>
+<h1>this is SINGLE.php</h1>
 <?php
 /**
  * The template for displaying all single posts.
@@ -24,6 +24,16 @@ get_header();
 					comments_template();
 				endif;
 			?>
+
+		
+		<?php get_field(price) ?>
+
+
+
+
+		<?php the_title( sprintf( '<p class="productTitle"><a href="%s"rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ) ?>
+                <p><?php setlocale(LC_MONETARY, 'en_US');
+                echo money_format('%.2n', get_field( 'price') ) ;  ?></p>	
 
 		<?php endwhile; // End of the loop. ?>
 

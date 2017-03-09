@@ -9,7 +9,7 @@ function create_new_post($post) {
 		'add_new'            => _x( 'Add New ', ucfirst($post), 'your-plugin-textdomain' ),
 		'add_new_item'       => __( 'Add New '. ucfirst($post), 'your-plugin-textdomain' ),
 		'new_item'           => __( 'New'. $post, 'your-plugin-textdomain' ),
-		'edit_item'          => __( 'Edit'. $post, 'your-plugin-textdomain' ),
+		'edit_item'          => __( 'Edit '. ucfirst($post), 'your-plugin-textdomain' ),
 		'view_item'          => __( 'View'. $post, 'your-plugin-textdomain' ),
 		'all_items'          => __( 'All '. ucfirst($post).'s', 'your-plugin-textdomain' ),
 		'search_items'       => __( 'Search'. $post.'s', 'your-plugin-textdomain' ),
@@ -76,7 +76,7 @@ function create_product_taxonomies($tax) {
 }
 
 function create_product_tax() {
-	$tax_array = array("type" => "product", "color" => "product");
+	$tax_array = array("type" => "product"); // can create multiple here, separate by comma
 
 	foreach ($tax_array as $tax_key => $tax_val){
 		
