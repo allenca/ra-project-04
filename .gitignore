@@ -3,7 +3,6 @@
 # compiled output
 /dist
 /tmp
-/index.php
 /themes/median/
 /themes/tester/
 /themes/twentyfifteen
